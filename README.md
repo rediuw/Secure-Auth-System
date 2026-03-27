@@ -18,5 +18,3 @@ The system includes user registration, login, role-based access control, and sec
 - **Database:** MongoDB
 - **Authentication:** JWT (JSON Web Tokens)
 - **Optional OAuth:** Google OAuth 2.0
-
-## Folder Structure
