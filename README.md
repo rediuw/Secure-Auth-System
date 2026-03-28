@@ -18,3 +18,64 @@ The system includes user registration, login, role-based access control, and sec
 - **Database:** MongoDB
 - **Authentication:** JWT (JSON Web Tokens)
 - **Optional OAuth:** Google OAuth 2.0
+
+
+# Backend API (Auth Service)
+## Base URL
+Code
+http://localhost:5000/api/auth
+## Routes
+## 1. Register User
+### Endpoint:
+
+Code
+POST /register
+### Request Body (JSON):
+
+json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "123456"
+}
+
+### Response (201 Created):
+
+json
+{
+  "message": "User registered successfully",
+  "user": {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "123456",
+    "role": "user",
+    "created_at": "2026-03-28T12:54:43.795Z"
+  }
+}
+## 2. Login User
+### Endpoint:
+
+Code
+POST /login
+### Request Body (JSON):
+
+json
+{
+  "email": "john@example.com",
+  "password": "123456"
+}
+### Response (200 OK):
+
+json
+{
+  "message": "Login successful",
+  "user": {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "123456",
+    "role": "user",
+    "created_at": "2026-03-28T12:54:43.795Z"
+  }
+}
