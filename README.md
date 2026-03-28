@@ -23,7 +23,7 @@ The system includes user registration, login, role-based access control, and sec
 
 # Authentication API (Backend)
 
-This backend provides basic authentication routes for registering and logging in users.  
+These are basic authentication routes for registering and logging in users.  
 
 Base URL: `http://localhost:5000/api/auth`
 
